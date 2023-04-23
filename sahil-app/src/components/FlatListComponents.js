@@ -1,12 +1,22 @@
 import React from 'react'
-import { View } from 'react-native-web'
+import { StyleSheet, View, Text } from 'react-native'
 
-export const FlatListComponents = () => {
+const FlatListComponents = () => {
     return (
-        <View>
+        <View style={styles.flat}>
             <Text>
                 hello from the flat list components
             </Text>
         </View>
     )
 }
+
+const styles = StyleSheet.create({
+    flat: {
+        backgroundColor:"red",
+        padding:"45px",
+        fontWeight:"bold",
+        fontStyle:"white",
+    }
+})
+export default FlatListComponents
