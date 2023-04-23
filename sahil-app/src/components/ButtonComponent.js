@@ -29,11 +29,11 @@ const ButtonComponent = () => {
 const styles = StyleSheet.create({
     steelblue: {
         textTransform:"uppercase",
-        fontWeight: "bold" ,
-        fontSize: 300,
-        backgroundColor: "orange",
+        fontWeight: "bold",
+        fontSize: 3,
+        backgroundColor:"#047BD5",
         padding: 10,
-        color: "white",
+        textColor: "White",
         marginTop: 10,
         
     },
