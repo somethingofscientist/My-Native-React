@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, View, Text, Alert } from 'react-native'
+import { Button, View, Text, Alert, TouchableOpacity } from 'react-native'
 
 const ButtonComponent = () => {
     return (
@@ -8,10 +8,18 @@ const ButtonComponent = () => {
             <Button
                 title='Click on this'
                 onPress={() => {
-                    Alert.alert("hello world")
-                    console.log('hello world')
+                    Alert.alert("Button hello world")
+                    console.log('Button hello world')
                 }}
             />
+            <TouchableOpacity
+                onPress={() => {
+                    Alert.alert("Touchable opacity")
+                    console.log('Touchable opacity')
+                }}
+            >
+                <Text>TouchableOpacity Button</Text>
+            </TouchableOpacity>
         </View>
     )
 }
